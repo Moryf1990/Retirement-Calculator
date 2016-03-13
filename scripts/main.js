@@ -4,7 +4,7 @@ document.write('<div>What is your current age? ' +currentAge+' </div>');
 var retireAge = prompt('At what age do you want to retire?');
 document.write('<div>At what age do you want to retire? ' +retireAge+' </div>')
 
-var retirement = parseFloat(retireAge - currentAge);
+var retirement = parseFloat(retireAge) - parseFloat(currentAge);
 var year = new Date().getFullYear();
 var retireYear = new Date().getFullYear() + retirement;
 var lateRetire = year-retireYear
